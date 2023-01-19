@@ -21,7 +21,7 @@
 //Creating custom components
 
 //A component is a function that returns React elements whenever the function is called.
-//A component must be named using Camelcase and it is not called as function where we use () instead we use <Temporary /> which are known as angle brackets
+//A component must be named using Pascal case(TemporaryName) and it is not called as function where we use () instead we use <Temporary /> which are known as fragment tags
 
 //  function TemporaryName() {
 //     return (
@@ -45,12 +45,20 @@
 function Page() {
     return (
         <div>
+            <header>
+                <nav>
+                    <img src="./react.png" width = "40px"></img>
+                </nav>
+            </header>
             <h1> Reasons why I love React</h1>
             <ol>
                 <li>It is efficient</li>
                 <li>Easy to learn</li>
                 <li>It is a hireable skill</li>
             </ol>
+            <footer>
+                @2023 Wanderi development. All rights reserved
+            </footer>
         </div>
     )
 }
